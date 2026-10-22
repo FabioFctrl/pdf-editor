@@ -196,8 +196,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
 <script>
 // ── LANGUAGE ────────────────────────────────────────────────────
-// One page, two languages: ?lang=it / ?lang=en, otherwise the browser language
-// (Italian browsers get Italian, everyone else English).
+// One page, two languages: English by default, Italian with ?lang=it (the it/
+// folder redirects there). The browser language is deliberately not used, so the
+// main address always opens in English whatever the visitor's settings.
 const STR={
   en:{appTitle:'PDF Editor',intro:'Open a PDF to add text, symbols, images and a signature, then download the edited file.',
     choose:'Choose PDF file',privacy:'Everything happens in your browser: the PDF is never uploaded.',
@@ -220,8 +221,7 @@ const STR={
 };
 const LANG=(()=>{
   const q=new URLSearchParams(location.search).get('lang');
-  if(q&&STR[q])return q;
-  return (navigator.language||'').toLowerCase().startsWith('it')?'it':'en';
+  return q&&STR[q]?q:'en';
 })();
 const t=k=>STR[LANG][k]??STR.en[k]??k;
 document.documentElement.lang=LANG;

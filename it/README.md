@@ -8,6 +8,8 @@ firma disegnata a mano** a qualsiasi PDF, poi scarica il file modificato. Niente
 **Usalo online:** <https://fabiofctrl.github.io/pdf-editor/it/>
 (oppure <https://fabiofctrl.github.io/pdf-editor/?lang=it>)
 
+![Editor PDF con un documento d'esempio: nome e data scritti, un segno di spunta e una firma disegnata](../docs/screenshot.png)
+
 ## Funzioni
 
 - **Testo**: clicca in un punto della pagina e scrivi. Carattere (Arial, Helvetica, Times New Roman, Courier New,
@@ -18,7 +20,7 @@ firma disegnata a mano** a qualsiasi PDF, poi scarica il file modificato. Niente
 - Ogni elemento si può **spostare**, **ridimensionare**, **ruotare** ed **eliminare** (passa sopra con il mouse per
   vedere le maniglie).
 - **Scarica** salva un nuovo PDF chiamato `<originale>_modificato.pdf`.
-- Interfaccia in italiano e inglese: scelta in base alla lingua del browser, oppure forzata con `?lang=it` / `?lang=en`.
+- Interfaccia in inglese e italiano: inglese all'indirizzo principale, italiano su `/it/` o con `?lang=it`.
 
 ## Privacy
 

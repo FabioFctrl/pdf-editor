@@ -6,7 +6,9 @@ signature** to any PDF, then download the edited file. Nothing is uploaded anywh
 🇮🇹 **Versione italiana:** [it/README.md](it/README.md)
 
 **Use it online:** <https://fabiofctrl.github.io/pdf-editor/>
-(Italian interface: <https://fabiofctrl.github.io/pdf-editor/?lang=it>)
+(Italian interface: <https://fabiofctrl.github.io/pdf-editor/it/>)
+
+![PDF Editor with a sample document: typed name and date, a check mark and a drawn signature](docs/screenshot.png)
 
 ## Features
 
@@ -17,7 +19,7 @@ signature** to any PDF, then download the edited file. Nothing is uploaded anywh
 - **Images**: insert any image (PNG, JPG, …).
 - Every item can be **moved**, **resized**, **rotated** and **removed** (hover over it to see the handles).
 - **Download** saves a new PDF named `<original>_edited.pdf`.
-- English and Italian interface: chosen from the browser language, or forced with `?lang=en` / `?lang=it`.
+- English and Italian interface: English by default, Italian at `/it/` or with `?lang=it`.
 
 ## Privacy
 
